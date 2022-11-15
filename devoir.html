@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="devoir.css">
+    <title>Sauve ton animal</title>
+</head>
+<body>
+    <div></div>
+    <form class="formulaire" onsubmit=sayhi()>
+        <fieldset class="contact">
+            <legend>Contact</legend>
+            <p>Nom *<input id="name" type="text" placeholder="Olivier Serre" required></p>
+            <p>Portable<input type="text" placeholder="xx xxx xxx"></p>
+            <p>Email *<input type="email" placeholder="pernom.nom@domaine.com" required></p>
+        </fieldset>
+        <fieldset class="infPer">
+            <legend>Information personelles</legend>
+            <p>Age *<input type="number" placeholder="xx" required></p>
+            <p>Genre <select>
+                <option>Femme</option>
+                <option>Homme</option>
+            </select></p>
+            <p>Pourqoui voulez-vous participer?</p>
+            <textarea></textarea>
+        </fieldset>
+        <fieldset class="animFav">
+            <legend>Choisissez vos animaux favoris</legend>
+            <p><input type="checkbox">Chat Noir</p>
+            <p><input type="checkbox">Canari</p>
+            <p><input type="checkbox">Chien</p>
+        </fieldset>
+        <p><input type="submit" value="Soummettre" id="button"></p>
+    </form>
+    <script src="devoir.js"></script>
+</body>
+</html>
